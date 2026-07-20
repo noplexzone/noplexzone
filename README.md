@@ -31,3 +31,11 @@ Then open <http://127.0.0.1:4173>.
 ## Deployment recommendation
 
 Cloudflare Pages is recommended for production because it keeps the custom domain independent of GitHub Pages repo ownership and provides simple deployment rollbacks on the free tier.
+
+## Media showcase data
+
+The public `data/media-showcase.json` snapshot is generated from Tautulli. Do not commit Tautulli credentials.
+
+```bash
+TAUTULLI_URL=http://tautulli:8181 TAUTULLI_API_KEY=redacted python3 scripts/generate-media-showcase.py
+```

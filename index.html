@@ -20,7 +20,7 @@
       <a class="brand" href="#top" aria-label="No Plex Zone home"><span class="brand-mark" aria-hidden="true">NPZ</span><span>No Plex Zone</span></a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span class="sr-only">Toggle navigation</span><span></span><span></span><span></span></button>
       <div class="nav-links" id="nav-links">
-        <a href="#services">Services</a><a href="#access">Access</a><a href="#help">Help</a><a href="#support">Donate</a><a class="nav-cta" href="https://invite.noplexzone.com" rel="noopener noreferrer">Redeem Invite</a>
+        <a href="#library">Library</a><a href="#services">Services</a><a href="#access">Access</a><a href="#help">Help</a><a href="#support">Donate</a><a class="nav-cta" href="https://invite.noplexzone.com" rel="noopener noreferrer">Redeem Invite</a>
       </div>
     </nav>
   </header>
@@ -32,7 +32,7 @@
           <p class="eyebrow"><span class="live-dot" aria-hidden="true"></span> Private invite-only media hub</p>
           <h1 id="hero-title">Welcome to <span>No Plex Zone</span>.</h1>
           <p class="hero-lede">A public doorway for a private collection of movies, shows, comics, watch stats, request tools, and whatever gets added next.</p>
-          <div class="hero-actions" aria-label="Primary actions"><a class="button button-primary" href="https://invite.noplexzone.com" rel="noopener noreferrer">Redeem Invite</a><a class="button button-secondary" href="#services">View Services</a></div>
+          <div class="hero-actions" aria-label="Primary actions"><a class="button button-primary" href="https://invite.noplexzone.com" rel="noopener noreferrer">Redeem Invite</a><a class="button button-secondary" href="#library">View Library</a></div>
           <p class="hero-note">Access is currently invite-only. If you received a link, start there. If you did not, ask the person who referred you for a current invite.</p>
           <div class="uptime-widget" data-status-widget data-status-endpoint="https://stats.uptimerobot.com/api/getMonitorList/YKTwO6RG4p">
             <span class="status-indicator status-unknown" data-status-indicator aria-hidden="true"></span>
@@ -48,6 +48,31 @@
           <div class="command-line"><span>hub</span><strong>noplexzone.com</strong></div>
           <dl class="status-list"><div><dt>Access</dt><dd>Invite only</dd></div><div><dt>Requests</dt><dd>Plex login</dd></div><div><dt>Queue</dt><dd>Public</dd></div><div><dt>Uptime</dt><dd>Public</dd></div></dl>
         </aside>
+      </div>
+    </section>
+
+    <section class="section library-section" id="library" aria-labelledby="library-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Inside the library</p>
+          <h2 id="library-title">A quick look at what is waiting</h2>
+          <p>Numbers and title highlights are generated from Tautulli so the page can show off the library without exposing private server access.</p>
+        </div>
+        <div class="library-showcase" data-media-showcase>
+          <div class="library-stats" data-library-stats aria-label="Library totals">
+            <article class="library-stat skeleton-card"><strong>Loading…</strong><span>Checking library totals</span></article>
+          </div>
+          <div class="media-lists">
+            <article class="media-list-card">
+              <div class="media-list-heading"><span>Recently added</span><small data-showcase-generated></small></div>
+              <ol data-recently-added><li>Loading recent additions…</li></ol>
+            </article>
+            <article class="media-list-card">
+              <div class="media-list-heading"><span>Popular lately</span><small>based on recent plays</small></div>
+              <ol data-popular-media><li>Loading popular titles…</li></ol>
+            </article>
+          </div>
+        </div>
       </div>
     </section>
     <section class="section services-section" id="services" aria-labelledby="services-title"><div class="container"><div class="section-heading"><p class="eyebrow">Launchpad</p><h2 id="services-title">Tools and services</h2><p>Use the cards below to jump into the parts of the hub you have access to. Some services use Plex sign-in; others may require separate permissions.</p></div><div class="service-grid">
