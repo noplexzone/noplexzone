@@ -7,7 +7,7 @@ No Plex Zone is a private, invite-only media hub. This site explains the hub, li
 ## Services linked
 
 - Seerr — <https://request.noplexzone.com>
-- Monitarr — <https://monitarr.noplexzone.com>
+- Monitarr download queue — <https://monitarr.noplexzone.com>
 - Wrapped — <https://wrapped.noplexzone.com>
 - Komga — <https://comics.noplexzone.com>
 - Invite redemption — <https://invite.noplexzone.com>

@@ -10,3 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 - Initial public No Plex Zone landing page with service launcher, invite onboarding, troubleshooting FAQ, and donation links.
 - Cloudflare Pages deployment recommendation in project documentation.
+
+### Changed
+
+- Corrected Monitarr copy to describe the download queue instead of uptime/status monitoring.
