@@ -1,0 +1,16 @@
+# OS/editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Dependencies/build output if this static site gains a build step later
+node_modules/
+dist/
+build/
+.cache/
+
+# Local env/secrets
+.env
+.env.*
+!.env.example
