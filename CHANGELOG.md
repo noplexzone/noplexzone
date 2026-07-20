@@ -8,7 +8,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Added
 
-- Added a Tautulli-generated media showcase with library totals, recently added titles, and popular titles.
+- Limited the public media showcase to aggregate library totals only, removing title/watch-history lists from the page and snapshot data.
+- Added a Tautulli-generated media showcase with public-safe library totals.
 - Initial public No Plex Zone landing page with service launcher, invite onboarding, troubleshooting FAQ, and donation links.
 - Cloudflare Pages deployment recommendation in project documentation.
 

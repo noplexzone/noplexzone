@@ -34,7 +34,7 @@ Cloudflare Pages is recommended for production because it keeps the custom domai
 
 ## Media showcase data
 
-The public `data/media-showcase.json` snapshot is generated from Tautulli. Do not commit Tautulli credentials.
+The public `data/media-showcase.json` snapshot is generated from Tautulli. It intentionally contains aggregate library totals only; do not publish title lists, watch-history rows, usernames, or Tautulli credentials.
 
 ```bash
 TAUTULLI_URL=http://tautulli:8181 TAUTULLI_API_KEY=redacted python3 scripts/generate-media-showcase.py

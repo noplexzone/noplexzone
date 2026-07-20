@@ -66,25 +66,10 @@ function formatNumber(value) {
   return new Intl.NumberFormat('en-US').format(Number(value || 0));
 }
 
-function createMediaListItem(item, metricText) {
-  const li = document.createElement('li');
-  const title = document.createElement('strong');
-  title.textContent = item.title || 'Untitled';
-
-  const meta = document.createElement('span');
-  const pieces = [item.type, item.year, metricText].filter(Boolean);
-  meta.textContent = pieces.join(' · ');
-
-  li.append(title, meta);
-  return li;
-}
-
 async function renderMediaShowcase() {
   if (!mediaShowcase) return;
 
   const statsRoot = mediaShowcase.querySelector('[data-library-stats]');
-  const recentRoot = mediaShowcase.querySelector('[data-recently-added]');
-  const popularRoot = mediaShowcase.querySelector('[data-popular-media]');
   const generatedRoot = mediaShowcase.querySelector('[data-showcase-generated]');
 
   try {
@@ -107,19 +92,6 @@ async function renderMediaShowcase() {
       }));
     }
 
-    if (recentRoot) {
-      recentRoot.replaceChildren(...(data.recently_added || []).map((item) => {
-        return createMediaListItem(item, item.added ? `added ${item.added}` : item.library);
-      }));
-    }
-
-    if (popularRoot) {
-      popularRoot.replaceChildren(...(data.popular || []).map((item) => {
-        const plays = Number(item.plays || 0);
-        return createMediaListItem(item, `${formatNumber(plays)} ${plays === 1 ? 'play' : 'plays'}`);
-      }));
-    }
-
     if (generatedRoot && data.generated_at) {
       const generated = new Date(data.generated_at);
       generatedRoot.textContent = `updated ${generated.toLocaleDateString(undefined, { month: 'short', day: 'numeric' })}`;
@@ -128,15 +100,8 @@ async function renderMediaShowcase() {
     if (statsRoot) {
       statsRoot.replaceChildren();
     }
-    if (recentRoot) {
-      const li = document.createElement('li');
-      li.textContent = 'Library snapshot is temporarily unavailable.';
-      recentRoot.replaceChildren(li);
-    }
-    if (popularRoot) {
-      const li = document.createElement('li');
-      li.textContent = 'Popular titles are temporarily unavailable.';
-      popularRoot.replaceChildren(li);
+    if (generatedRoot) {
+      generatedRoot.textContent = 'Library totals are temporarily unavailable.';
     }
   }
 }
