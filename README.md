@@ -8,7 +8,7 @@ No Plex Zone is a private, invite-only media hub. This site explains the hub, li
 
 - Seerr — <https://request.noplexzone.com>
 - Monitarr download queue — <https://monitarr.noplexzone.com>
-- UptimeRobot public uptime — <https://stats.uptimerobot.com/YKTwO6RG4p>
+- UptimeRobot public uptime widget — <https://stats.uptimerobot.com/YKTwO6RG4p>
 - Wrapped — <https://wrapped.noplexzone.com>
 - Komga — <https://comics.noplexzone.com>
 - Invite redemption — <https://invite.noplexzone.com>
